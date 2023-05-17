@@ -1,0 +1,132 @@
+# Basics
+baseURL: https://docs.fedodo.org
+title: Fedodo Documentation
+enableGitInfo: true
+
+# Modules
+module:
+  imports:
+    - path: github.com/Fedodo/Fedodo.Docs.Theme
+    - path: github.com/google/docsy/dependencies
+
+# Content
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+pygmentsUseClassic: false
+pygmentsStyle: tango
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+
+params:
+  features:
+    analytics:
+      enabled: true
+      goatCounter:
+        code: fipv
+  links:
+    user:
+      - name: "GitHub"
+        url: "https://github.com/Fedodo"
+        icon: "fab fa-github"
+      - name: "Legal Details"
+        url: "https://fedodo.org/legal/legaldetails"
+        icon: "fa fa-gavel"
+  description: "This site provides to documentation for Fedodo."
+  copyright: "The Fedodo Authors"
+  privacy_policy: "https://fedodo.org/legel/privacypolicy"
+  ui:
+    readingTime:
+      enable: true
+
+  offlineSearch: true
+  algolia_docsearch: false
+  offlineSearchSummaryLength: 70
+  offlineSearchMaxResults: 10
+  prism_syntax_highlighting: false
+
+  # GitHub
+  github_repo: "https://github.com/Fedodo/Fedodo.Docs"
+  github_project_repo: "https://github.com/Fedodo/Fedodo.Docs"
+  github_branch: "dev"
+
+  mermaid:
+    enable: false
+    theme: default
+  plantuml:
+    enable: false
+    theme: default
+    svg_image_url: https://www.plantuml.com/plantuml/svg/
+    svg: false
+  katex:
+    enable: false
+    html_dom_element: document.body
+    mhchem:
+      enable: true
+  print:
+    disable_toc: false
+  markmap:
+    enable: false
+
+# Language
+languageCode: en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+contentDir: "content/en"
+enableMissingTranslationPlaceholders: true
+
+# Menu
+menu:
+  main:
+#    - name: "Sponsor"
+#      url: "https://github.com/sponsors/LNA-DEV"
+#      weight: 100
+#      pre: <i class="fa fa-credit-card"></i>
+    - name: GitHub
+      weight: 50
+      url: "https://github.com/Fedodo"
+      pre: <i class="fab fa-github"></i>
+
+# Outputs
+outputs:
+  section:
+    - HTML
+    - RSS
+    - print
+
+# SEO
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
+
+enableRobotsTXT: true
+
+# Privacy
+
+privacy:
+  # disqus:
+  #   disable: false
+  # googleAnalytics:
+  #   anonymizeIP: false
+  #   disable: false
+  #   respectDoNotTrack: false
+  #   useSessionStorage: false
+  # instagram:
+  #   disable: false
+  #   simple: false
+  # twitter:
+  #   disable: false
+  #   enableDNT: false
+  #   simple: false
+  # vimeo:
+  #   disable: false
+  #   enableDNT: false
+  #   simple: false
+  youtube:
+    disable: true
+    privacyEnhanced: true
